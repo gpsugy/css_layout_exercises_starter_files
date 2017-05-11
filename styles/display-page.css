@@ -1,18 +1,27 @@
-.wrapper {
+/*better name than wrapper*/
+.box-parent {
 	width: 800px;
 	height: 500px;
+	margin: 90px auto 90px;
 	font-size: 0;
-	margin: auto;
 }
 
-div {
+/*more specific to do .box than div*/
+.box {
 	border: 1px solid black;
+	/*if all divs will eventualy be inline-block, just do it here*/
+	display: inline-block; 
 }
 
-div[class^="top"] {
+/*keep hierachy: box-half and box-third first*/
+.box-half {
 	width: 50%;
 	height: 200px;
-	display: inline-block;
+}
+
+.box-third {
+	width: 33.33%;
+	height: 300px;
 }
 
 .top-left {
@@ -21,12 +30,6 @@ div[class^="top"] {
 
 .top-right {
 	background-color: blue;
-}
-
-div[class^="bot"] {
-	width: 33.33333%;
-	height: 300px;
-	display: inline-block;
 }
 
 .bot-left {
