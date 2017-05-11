@@ -1,0 +1,42 @@
+.wrapper {
+	width: 800px;
+	height: 500px;
+	font-size: 0;
+	margin: auto;
+}
+
+div {
+	border: 1px solid black;
+}
+
+div[class^="top"] {
+	width: 50%;
+	height: 200px;
+	display: inline-block;
+}
+
+.top-left {
+	background-color: green;
+}
+
+.top-right {
+	background-color: blue;
+}
+
+div[class^="bot"] {
+	width: 33.33333%;
+	height: 300px;
+	display: inline-block;
+}
+
+.bot-left {
+	background-color: gray;
+}
+
+.bot-center {
+	background-color: black;
+}
+
+.bot-right {
+	background-color: orange;
+}
