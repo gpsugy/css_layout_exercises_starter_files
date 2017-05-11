@@ -1,1 +1,32 @@
+nav {
+	background-color: gray;
+	height: 60px;
+	width: 100%;
+	padding-left: 60px;
+	position: fixed;
+}
 
+.nav-list {
+	display: inline-block;
+	margin: 3px auto 3px;
+	list-style: none;
+}
+
+.nav-avatar {
+	height: 80%;
+	margin: 4px auto;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+li {
+	display: inline;
+}
+
+li:after {
+	content: " |";
+}
+
+li:last-child:after {
+	content: none;
+}
