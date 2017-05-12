@@ -41,9 +41,9 @@ li:last-child:after {
 	content: none;
 }
 
+/*main ITSELF can be considered a "div". utilize it!*/
 main {
 	margin-top: 90px;
-	/*min-width: 1000px;*/
 }
 
 .box {
@@ -54,6 +54,8 @@ main {
 	position: relative;
 }
 
+/*relative within a relative (your previous solution) is not the way to go. it's easier to do things in relation
+ to one another, like absolute with relative.*/
 .box-icon {
 	position: absolute;
 	width: 200px;
