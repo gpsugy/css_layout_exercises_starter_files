@@ -1,9 +1,19 @@
+main {
+	font-size: 0;
+}
+
+html {
+	background: url(../images/outerspace_landscape.jpeg);
+	background-size: cover;
+}
+
 nav {
 	background-color: gray;
 	height: 60px;
 	width: 100%;
 	padding-left: 60px;
 	position: fixed;
+	top: 0;
 }
 
 .nav-list {
@@ -17,6 +27,7 @@ nav {
 	margin: 4px auto;
 	display: inline-block;
 	border-radius: 50%;
+	border: 1px solid black;
 }
 
 li {
@@ -29,4 +40,39 @@ li:after {
 
 li:last-child:after {
 	content: none;
+}
+
+/*when should I use position: relative + left vs display: static + margin?*/
+.box-parent {
+	background-color: black;
+	width: 800px;
+	height: 500px;
+	position: relative;
+	top: 200px;
+	left: 200px;
+}
+
+.box-border {
+	width: 500px;
+	height: 300px;
+}
+
+.box-icon {
+	width: 200px;
+	height: 200px;
+	z-index: 10;
+}
+
+.chidori {
+	position: relative;
+	left: 600px;
+}
+
+.box-dotted {
+	position: absolute;
+	border: 10px green dotted;
+	width: 600px;
+	height: 300px;
+	left: 100px;
+	bottom: 110px;
 }
