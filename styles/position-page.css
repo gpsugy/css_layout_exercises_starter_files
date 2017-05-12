@@ -2,7 +2,7 @@ main {
 	font-size: 0;
 }
 
-html {
+body {
 	background: url(../images/outerspace_landscape.jpeg);
 	background-size: cover;
 }
@@ -28,6 +28,9 @@ nav {
 	display: inline-block;
 	border-radius: 50%;
 	border: 1px solid black;
+	/*apparently, while vertical-align ul doesn't work, this does..*/
+	vertical-align: middle;
+
 }
 
 li {
